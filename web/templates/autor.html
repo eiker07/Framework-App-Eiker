@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+<div class="page-header">
+    <h1>Person Form</h1>
+    <p>Enter your titulo and paginas:   </p>
+        <br>
+            <form action="/autor_detail" method="post">
+                <input type="hidden" id="op" name="op" value="I">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup_id">id page</span>
+                    <input type="text" class="form-control" name="id_page" aria-label="Sizing example input" aria-describedby="inputGroup_idt">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup_name">titulo</span>
+                    <input type="text" class="form-control" name="titulo" aria-label="Sizing example input" aria-describedby="inputGroup_name">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup_n_pagina:">n_pagina:</span>
+                    <input type="text" class="form-control" name="n_pagina:" aria-label="Sizing example input" aria-describedby="inputGroup_lastName">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup_autor">autor</span>
+                    <input type="text" class="form-control" name="autor" aria-label="Sizing example input" aria-describedby="inputGroup_name">
+                </div>
+
+                <br >
+                <input class="btn btn-primary" type="submit" name="form" value="Submit" />
+
+            </form>
+</div>
+{% endblock %}
